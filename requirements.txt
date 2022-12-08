@@ -1,5 +1,5 @@
 pandas
-torch==1.9.1
+torch==1.7.1
 transformers==4.8.2
 pytorch-lightning==1.5.2
 streamlit==1.1.0
