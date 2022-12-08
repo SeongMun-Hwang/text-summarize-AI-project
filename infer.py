@@ -4,12 +4,12 @@
 #from transformers.models.bart import BartForConditionalGeneration
 
 #@st.cache
-def load_model():
-    model = BartForConditionalGeneration.from_pretrained('./kobart_summary')
-    # tokenizer = get_kobart_tokenizer()
-    return model
+# def load_model():
+    # model = BartForConditionalGeneration.from_pretrained('./kobart_summary')
+    # # tokenizer = get_kobart_tokenizer()
+    # return model
 
-model = load_model()
+model = BartForConditionalGeneration.from_pretrained('./kobart_summary')
 tokenizer = get_kobart_tokenizer()
 st.title("KoBART 요약 Test")
 text = st.text_area("뉴스 입력:")
