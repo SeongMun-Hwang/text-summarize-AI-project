@@ -1,4 +1,4 @@
-import pytorch
+#import pytorch
 import streamlit as st
 from kobart import get_kobart_tokenizer
 from transformers.models.bart import BartForConditionalGeneration
