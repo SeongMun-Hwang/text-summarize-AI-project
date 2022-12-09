@@ -4,7 +4,7 @@ import os
 currentpath = os.getcwd()
 print(currentpath)
 i=0
-f = open('summay.tsv', 'r', encoding='cp949')
+f = open('영어.tsv', 'r', encoding='cp949')
 rdr = csv.reader(f, delimiter='\t')
 r = list(rdr)
 
