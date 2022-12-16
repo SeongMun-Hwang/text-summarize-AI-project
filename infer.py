@@ -1,13 +1,13 @@
 #import pytorch
 #import streamlit as st
-#from kobart import get_kobart_tokenizer
+from kobart import get_kobart_tokenizer
 from transformers.models.bart import BartForConditionalGeneration
 
 #@st.cache
-# def load_model():
-    # model = BartForConditionalGeneration.from_pretrained('./kobart_summary')
-    # # tokenizer = get_kobart_tokenizer()
-    # return model
+def load_model():
+    model = BartForConditionalGeneration.from_pretrained('./kobart_summary')
+    tokenizer = get_kobart_tokenizer()
+    return model
 
 model = BartForConditionalGeneration.from_pretrained('/kobart_summary')
 tokenizer = get_kobart_tokenizer()
